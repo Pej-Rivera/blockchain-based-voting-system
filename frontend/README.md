@@ -1,4 +1,4 @@
-# my-dapp
+# voting-dapp
 
 ## Project setup
 ```
