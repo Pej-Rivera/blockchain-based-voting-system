@@ -16,7 +16,7 @@ contract Ballot {
     address public owner;
     mapping(address => bool) public voted;
     mapping(address => bool) public isVoter;
-
+      
     State public electionState;
     Candidate[] public candidates;
 
@@ -24,7 +24,7 @@ contract Ballot {
 
     constructor() {
         owner = msg.sender;
-        candidates.push(Candidate("Ate Ja", 0));
+        candidates.push(Candidate("Jerome", 0));
     }
 
     function getCandidatesLength() public view returns (uint256) {
@@ -43,6 +43,7 @@ contract Ballot {
         electionState = State.Ended;
     }
 
+
     function vote(uint256 _candidateIndex) public {
         require(isVoter[msg.sender], "Unauthorized user cannot vote");
         require(
@@ -50,15 +51,13 @@ contract Ballot {
             "Election is not in progress"
         );
         require(!voted[msg.sender], "You have already voted.");
-        require(
-            _candidateIndex < candidates.length,
-            "Invalid candidate index."
-        );
+        require(_candidateIndex < candidates.length, "Invalid candidate index.");
 
         candidates[_candidateIndex].voteCount++;
         voted[msg.sender] = true;
     }
 
+    
     function addVoter(address _voter) public {
         require(owner == msg.sender, "Only owner can add voter");
         require(!isVoter[_voter], "Voter already added");
@@ -81,7 +80,10 @@ contract Ballot {
             electionState == State.NotStarted,
             "Election has already started"
         );
-        Candidate memory newCandidate = Candidate({name: _name, voteCount: 0});
+        Candidate memory newCandidate = Candidate({
+            name: _name,
+            voteCount: 0
+        });
         candidates.push(newCandidate);
     }
 
@@ -105,7 +107,7 @@ contract Ballot {
         return "";
     }
 
-    function getRole(address _current) public view returns (uint256) {
+        function getRole(address _current) public view returns (uint256) {
         if (owner == _current) {
             return 1;
         } else if (isVoter[_current]) {
@@ -115,8 +117,10 @@ contract Ballot {
         }
     }
 
-    modifier onlyOwner() {
+    modifier onlyOwner(){
         require(msg.sender == owner, "not the owner");
         _;
     }
+    
+
 }

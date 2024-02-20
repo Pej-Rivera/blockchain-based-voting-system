@@ -1,0 +1,118 @@
+[
+  {
+    "POKEMON": "Bulbasaur",
+    "IPFS_URL": "ipfs/bafyreienz477gygjqua4z5zkays3l2a7ig42wjgrmloibuxazz2hf44eq4/metadata.json"
+  },
+  {
+    "POKEMON": "Bulbasaur",
+    "IPFS_URL": "ipfs/bafyreienz477gygjqua4z5zkays3l2a7ig42wjgrmloibuxazz2hf44eq4/metadata.json"
+  },
+  {
+    "POKEMON": "Ivysaur",
+    "IPFS_URL": "ipfs/bafyreihncodupjkwnlqzzno5db63fsh2ox6oowq4lzwy2ft6wnfxplzv5a/metadata.json"
+  },
+  {
+    "POKEMON": "Venusaur",
+    "IPFS_URL": "ipfs/bafyreiebttgkxxbx7l3auyy6qquxnjt323w5ejgbcwjjvtebu6gq4lhuoq/metadata.json"
+  },
+  {
+    "POKEMON": "Charmander",
+    "IPFS_URL": "ipfs/bafyreidlkf7f2os2rzywqwo3epu6pkpwcmcowipoigtpesgqfnkofcjlfm/metadata.json"
+  },
+  {
+    "POKEMON": "Charmeleon",
+    "IPFS_URL": "ipfs/bafyreif5ynid75oqpnnlmgth7v3mdzyeh3fyimeomj5gqjeabfh6mf5qcq/metadata.json"
+  },
+  {
+    "POKEMON": "Charizard",
+    "IPFS_URL": "ipfs/bafyreiaudqzhjkmsobecn5ijcxhwcw5gr2egdnkzpmwko2hh7ejed527jy/metadata.json"
+  },
+  {
+    "POKEMON": "Squirtle",
+    "IPFS_URL": "ipfs/bafyreiebmbzc3unnrv3upxlksrpjmqjiqkcifzdenq2x3zoiqaspidmc6i/metadata.json"
+  },
+  {
+    "POKEMON": "Wartortle",
+    "IPFS_URL": "ipfs/bafyreihzuijps3x3koup7mgbyg3k6l7dyg45jbbhpjqoroho7rd3oupsea/metadata.json"
+  },
+  {
+    "POKEMON": "Blastoise",
+    "IPFS_URL": "ipfs/bafyreictwot4k4fhy5ik4trzuxpko5opvtobuxwlzwc6zf6enzayes75vy/metadata.json"
+  },
+  {
+    "POKEMON": "Caterpie",
+    "IPFS_URL": "ipfs/bafyreig55jhsgjuvxftcfhrypgfj5sb2qe6ljpuot4u7rpdis2wjutya6y/metadata.json"
+  },
+  {
+    "POKEMON": "Metapod",
+    "IPFS_URL": "ipfs/bafyreihmsbmsgpwvrqfewnwjmzpd7z6u2yj6qolwdcylz7avg2tw37nyyu/metadata.json"
+  },
+  {
+    "POKEMON": "Butterfree",
+    "IPFS_URL": "ipfs/bafyreig2zuzz5wawsv74p2vw3twflfeei4f42qudyr2wrqmg3hblfzuqhq/metadata.json"
+  },
+  {
+    "POKEMON": "Weedle",
+    "IPFS_URL": "ipfs/bafyreiainzs6f6ossdyk5iscjeu2v7dzesjfi25j2ewsg5c4jqiuehmuky/metadata.json"
+  },
+  {
+    "POKEMON": "Kakuna",
+    "IPFS_URL": "ipfs/bafyreifzkmun5gjqndgq2fdhx3423phngtcnqhxoh2rk3sefs7ueping4i/metadata.json"
+  },
+  {
+    "POKEMON": "Beedrill",
+    "IPFS_URL": "ipfs/bafyreiel6zlwkphn2sfnzc7udqc45zgxvw4myndmzhxdpqkvpwvsdap5p4/metadata.json"
+  },
+  {
+    "POKEMON": "Pidgey",
+    "IPFS_URL": "ipfs/bafyreigwldavcnzwrd6idxbfzy4o3owyv4c4z5t47ejsv62dtnmkfiu3mm/metadata.json"
+  },
+  {
+    "POKEMON": "Pidgeotto",
+    "IPFS_URL": "ipfs/bafyreieaoivhqpbs42hgpkqxqeznynlkwvedalops4dbnoixiovlbzruw4/metadata.json"
+  },
+  {
+    "POKEMON": "Pidgeot",
+    "IPFS_URL": "ipfs/bafyreiavxusnaahri53yeofyv5jwgy4al6faad42bnuhiazrsekivjwbli/metadata.json"
+  },
+  {
+    "POKEMON": "Rattata",
+    "IPFS_URL": "ipfs/bafyreifbaffn5k4cigue3oofziv4b2buso5j5kpmepctemoxowe7fjkxku/metadata.json"
+  },
+  {
+    "POKEMON": "Raticate",
+    "IPFS_URL": "ipfs/bafyreihb6g4uf4odivwwnihdr7du6dmmd4hhfqalhi5nu76kbyqiy43v24/metadata.json"
+  },
+  {
+    "POKEMON": "Spearow",
+    "IPFS_URL": "ipfs/bafyreif6qd67mhwyconrqzjobnmf4rzomothfgzf7hltyqzoolauhhlwo4/metadata.json"
+  },
+  {
+    "POKEMON": "Fearow",
+    "IPFS_URL": "ipfs/bafyreiggfvdkjedwnmoni56rnkctzrrmdzy7rmliv6ltgnjht22eso52ua/metadata.json"
+  },
+  {
+    "POKEMON": "Ekans",
+    "IPFS_URL": "ipfs/bafyreieyqttrgwaqjlag4kexksyvto6gu23wlw5qaamqjdcmpo3kipdjke/metadata.json"
+  },
+  {
+    "POKEMON": "Arbok",
+    "IPFS_URL": "ipfs/bafyreiakrso5a36tm5qaj2xy7vqbc6abtifgq3c7ei6fbtl4xo33ebcefm/metadata.json"
+  },
+  {
+    "POKEMON": "Pikachu",
+    "IPFS_URL": "ipfs/bafyreifbutvrqwgxt47piwd4gpb36ikb4styedvqjsw5qs6jpaolfbmbjy/metadata.json"
+  },
+  {
+    "POKEMON": "Raichu",
+    "IPFS_URL": "ipfs/bafyreiesw2qslyjhie6oz22jadl7lrpijyalxnep4sspslghm7om4simge/metadata.json"
+  },
+  {
+    "POKEMON": "Sandshrew",
+    "IPFS_URL": "ipfs/bafyreifhuz45db7i45njx4y7og5izb2rxw5xzfzu2nxn6ibhvhe2l23y6q/metadata.json"
+  },
+  {
+    "POKEMON": "Sandslash",
+    "IPFS_URL": "ipfs/bafyreid3azt4772u5vsgizmbm44rkvcxi3koza2v5wwpwwmamgpo43sqki/metadata.json"
+  }
+]

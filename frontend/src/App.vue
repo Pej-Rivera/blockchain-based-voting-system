@@ -1,11 +1,11 @@
 <template>
   <b-container fluid class="app">
-    <CandidatesList />
+     <CandidatesList /> 
   </b-container>
 </template>
 
 <script>
-import CandidatesList from '../../src/components/CandidatesList.vue';
+ import CandidatesList from './components/CandidatesList.vue';
 
 
 export default {
@@ -22,6 +22,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  color: "black";
   margin: 20px 0px;
 }
 

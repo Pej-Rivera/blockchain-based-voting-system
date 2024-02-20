@@ -1,12 +1,14 @@
 <template>
   <div>
     <div class="container">
-      <b-navbar toggleable="lg" type="dark" variant="" class="p-0">
-        <b-navbar-brand href="#">Blockchain Based Voting System</b-navbar-brand>
+      <b-navbar toggleable="lg" type="" variant="" class="p-0">
+        <b-navbar-brand class="text-dark" href="#">Blockchain Based Voting System</b-navbar-brand>
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
           <b-navbar-nav>
-            <b-nav-item href="#" disabled v-if="role === 1">Admin</b-nav-item>
+            <b-nav-item href="#" disabled v-if="role === 1">
+              <p style="color: black!important">Admin</p>
+            </b-nav-item>
 
             <b-nav-item href="#" disabled v-else-if="role === 2">
               <p style="color: #3F704D!important">Registered Voter</p>
@@ -18,25 +20,25 @@
         </b-navbar-nav>
       </b-navbar>
 
-      <h5 v-if="electionState === 0" class="text-light mt-5">
+      <h5 v-if="electionState === 0" class="text-dark mt-5">
         Election Status: Election has not started.
       </h5>
-      <h5 v-else-if="electionState === 1" class="text-light mt-5">
+      <h5 v-else-if="electionState === 1" class="text-dark mt-5">
         Election Status: Election is in progress.
       </h5>
-      <h5 v-else class="text-light mt-5">
+      <h5 v-else class="text-dark mt-5">
         Election Status: Election has ended.
       </h5>
       <div class="m-3">
-        <div class="text-center mt-3 text-light" v-if="accounts.length === 0">Account Address: </div>
-        <div class="text-center mt-3 text-light" v-else>Account Address: {{ accounts[0] }}</div>
+        <div class="text-center mt-3 text-black-50" v-if="accounts.length === 0">Account Address: </div>
+        <div class="text-center mt-3 text-black-50" v-else>Account Address: {{ accounts[0] }}</div>
         <b-button block class="text-center mt-2" v-if="electionState === 0 && role === 1" v-b-modal.modal-start-election
           style="background-color: #00356B;">Start the Election</b-button>
         <b-button block class="text-center mt-2" v-if="electionState === 1 && role === 1" v-b-modal.modal-end-election
           style="background-color: #00356B;">Stop the Election</b-button>
         <div class="text-center mt-5" v-if="role === 1 && electionState === 0">
           <hr style="border-color:white" />
-          <b-form-input style="background: transparent;color: white;" v-model="address" :state="addressState"
+          <b-form-input style="background: transparent;color: gray;" v-model="address" :state="addressState"
             placeholder="Account Address"></b-form-input>
 
 
@@ -47,7 +49,7 @@
         <div class="text-center mt-5" v-if="role === 1 && electionState === 0">
           <hr style="border-color:white" />
 
-          <b-form-input style="background: transparent;color: white;" v-model="name" :state="nameState"
+          <b-form-input style="background: transparent;color: gray;" v-model="name" :state="nameState"
             placeholder="Candidate Name"></b-form-input>
 
 
@@ -55,7 +57,7 @@
             Candidate</b-button>
         </div>
         <hr style="border-color:white" />
-        <h5 style="color: white;">List of Candidates</h5>
+        <h5 style="color: gray;">List of Candidates</h5>
         <div>
           <div class="d-flex mt-2">
             <b-card v-for="(candidate, index) in candidates" :key="index" class="m-3" style="max-width: 20rem;">
@@ -78,10 +80,11 @@
           <b-button v-if="role === 2 && electionState === 1 && !voted" block class="mt-3" @click="vote()"
             style="background-color: #00356B;">Vote</b-button>
 
-          <p v-if="role === 2 && electionState === 1 && voted" class="text-light mt-3">Your vote has been cast.</p>
+          <p v-if="role === 2 && electionState === 1 && voted" class="text-black-50 mt-3">Your vote has been cast.</p>
 
-          <h4 v-if=" electionState === 2" class="text-light mt-5">Congratulations to our newly elected President! 🥳</h4>
-          <h4 v-if=" electionState === 2" class="text-light mt-3">{{ electionWinner }} </h4>
+          <h4 v-if="electionState === 2" class="text-black-50 mt-5">Congratulations to our newly elected President! 🥳
+          </h4>
+          <h4 v-if="electionState === 2" class="text-black-50 mt-3">{{ electionWinner }} </h4>
         </div>
 
       </div>
@@ -96,7 +99,7 @@
 </template>
 <script>
 import { ethers } from "ethers";
-import contractAbi from "../contracts/abi/ballot.json"
+import contractAbi from "../contracts-abi/ballot.json"
 
 export default {
   data() {
@@ -133,7 +136,7 @@ export default {
     },
     // Function that creates contract instance
     async createContractInstance() {
-      var contractAddress = '0xE01fc209EA4B17c2eff30ad8A15251d7E8A9dC02'
+      var contractAddress = '0x72199A58707E0306ec361563b2fb905b7BAbA08e'
       this.contract = new ethers.Contract(contractAddress, contractAbi)
       this.contract = this.contract.connect(this.provider)
 
@@ -226,7 +229,7 @@ export default {
         var _candidate = {
           name: candidate.name,
           voteCount: candidate.voteCount,
-          image: 'https://avatars.dicebear.com/api/pixel-art/' + candidate.name + '.svg',
+          image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=' + candidate.name,
 
         }
         this.candidates.push(_candidate)
@@ -277,7 +280,7 @@ h4.candidate-name {
 
 body {
   font-family: "Odibee Sans", cursive;
-  background-image: url("https://static.vecteezy.com/system/resources/previews/011/231/538/original/abstract-geometric-background-with-isometric-digital-blocks-blockchain-concept-and-modern-technology-illustration-free-vector.jpg")
+  background: #f2f2f2;
 }
 
 .containers {
@@ -297,4 +300,5 @@ body {
   border: 1px solid black;
   padding: 10px;
   width: 500px;
-}</style>
+}
+</style>
