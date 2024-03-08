@@ -136,7 +136,7 @@ export default {
     },
     // Function that creates contract instance
     async createContractInstance() {
-      var contractAddress = '0x72199A58707E0306ec361563b2fb905b7BAbA08e'
+      var contractAddress = '0xD977eA7Cafbb321a582B3F02413456Fa6f9e076b'
       this.contract = new ethers.Contract(contractAddress, contractAbi)
       this.contract = this.contract.connect(this.provider)
 
